@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("callOrder")})();
+(()=>{"use strict";(()=>{const e=document.querySelector("#header"),l=document.querySelector("body"),o=document.querySelector(".header-modal"),t=document.querySelector(".overlay"),c=document.querySelector(".header-modal__close");console.log(l),c.addEventListener("click",(()=>{console.log("headerModalClose.click"),o.style.display="none",t.style.display="none"})),e.addEventListener("click",(e=>{e.preventDefault(),e.target.closest(".btn")&&(o.style.display="block",t.style.display="block")}))})()})();
