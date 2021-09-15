@@ -1,8 +1,8 @@
-const callOrder = () => {
-    const header = document.querySelector('#header'),
-        headerModal = document.querySelector('.header-modal'),
-        overlay = document.querySelector('.overlay'),
-        headerModalClose = document.querySelector('.header-modal__close');
+const modal = obj => {
+    const header = document.querySelector(obj.parent),
+        headerModal = document.querySelector(obj.modal),
+        overlay = document.querySelector(obj.overlay),
+        headerModalClose = document.querySelector(obj.close);
 
     headerModalClose.addEventListener('click', () => {
         headerModal.style.display = 'none';
@@ -11,11 +11,11 @@ const callOrder = () => {
 
     header.addEventListener('click', event => {
         event.preventDefault();
-        if(event.target.closest('.btn')) {
+        if(event.target.closest(obj.target)) {
             headerModal.style.display = 'block';
             overlay.style.display = 'block';
         }   
     });    
 };
 
-export default callOrder;
+export default modal;
