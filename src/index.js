@@ -1,8 +1,11 @@
 import modal from './modules/modal';
 import slider from './modules/slider';
 import timer from './modules/timer';
+import form from './modules/form';
+import rules from './modules/rules';
 
 timer('18 september 2021');
+
 modal({
     parent: '#header',
     modal: '.header-modal',
@@ -36,3 +39,7 @@ slider({
 });
 
 timer('18 september 2021', 1);
+
+rules();
+
+form();
