@@ -785,13 +785,13 @@ p.services-image_mobile {
   background: url("../images/zoom.png") no-repeat center
     rgba(79, 104, 110, 0.42);
   position: absolute;
-  width: 100%;
+  width: 200px;
   height: 100%;
   top: 0;
-  left: 0;
+  left: calc((100% - 200px) / 2);
   opacity: 0;
 }
-.document-inner:hover .document-overlay {
+.document-overlay:hover {
   opacity: 1;
   transition: opacity 0.3s linear;
   -webkit-transition: opacity 0.3s linear;

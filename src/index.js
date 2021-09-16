@@ -3,6 +3,7 @@ import slider from './modules/slider';
 import timer from './modules/timer';
 import form from './modules/form';
 import rules from './modules/rules';
+import certificate from './modules/certificate';
 
 timer('18 september 2021');
 
@@ -43,3 +44,5 @@ timer('18 september 2021', 1);
 rules();
 
 form();
+
+certificate(565, 400);
