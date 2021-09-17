@@ -107,7 +107,11 @@ const form = () => {
                             }
                             overlay.style.display = 'none';
                         }, 2500);
-                        formInputs.forEach(input => input.value = '');
+                        formInputs.forEach(input => {
+                            if (! input.type === 'hidden') {
+                                input.value = '';
+                            }
+                        });
                         btn.textContent = "Успешно отправлено"
                         btn.disabled = true; 
                     })

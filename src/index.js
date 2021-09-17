@@ -4,8 +4,11 @@ import timer from './modules/timer';
 import form from './modules/form';
 import rules from './modules/rules';
 import certificate from './modules/certificate';
+import scroll from './modules/scroll';
 
-timer('18 september 2021');
+timer('20 september 2021');
+
+scroll();
 
 modal({
     parent: '#header',
@@ -39,7 +42,7 @@ slider({
     itemWidth: 545,
 });
 
-timer('18 september 2021', 1);
+timer('20 september 2021', 1);
 
 rules();
 
