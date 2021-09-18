@@ -1,12 +1,10 @@
 const rules = () => {
-    // ввод цифр
-    // const regexNum = /[^0-9]/; 
-    // const calcInp = document.querySelectorAll('.calc-block>input');
-    // calcInp.forEach(item => {
-    //     item.oninput = () => {
-    //         item.value = item.value.replace(regexNum, '');
-    //     };
-    // });
+    //ввод цифр
+    const regexNum = /[^0-9]/; 
+    const calcInp = document.querySelector('#calc-input');
+    calcInp.oninput = () => {
+        calcInp.value = calcInp.value.replace(regexNum, '');
+    };
 
     // ввод кириллицы
     const regex = /[^А-Яа-яЁёA-Za-z\s-]/g; // регулярка только русские, латинские буквы, пробел и дефис

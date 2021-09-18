@@ -86,6 +86,9 @@ const form = () => {
                 formData.forEach((val, key) => {
                     body[key] = val;
                 });
+                if (document.querySelector('body').getAttribute('class') === 'balkony' && document.getElementById('calc-total').value > 0) {
+                    body['calc-total'] = document.getElementById('calc-total').value;
+                }                
                 postData(body)
                     .then(response => {
                         if (response.status !== 200) {
