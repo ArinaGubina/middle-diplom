@@ -16,11 +16,11 @@ function timer(deadLine, index = 0) {
         return { timeRemaining, days, hours, minutes, seconds };
     }
 
-    updateClock();
+    
     const intervalIndex = setInterval(() => {
         updateClock();
     }, 1000);
-
+    updateClock();
     function updateClock() {
         const timer = getTimeRemaining(deadLine);
         timerDays.textContent = (timer.days / 10 < 1) ? '0' + timer.days : timer.days;

@@ -7,7 +7,7 @@ import certificate from './modules/certificate';
 import scroll from './modules/scroll';
 import calc from './modules/calc';
 
-timer('20 september 2021');
+timer('22 september 2021');
 
 scroll();
 
